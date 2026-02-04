@@ -13,11 +13,3 @@ def fake_human_response():
     time.sleep(random.randint(1, 3))  # human delay
     return random.choice(RESPONSES)
 
-from flask import Flask
-
-# Assuming your app instance is named 'app'
-# If it has a different name, replace 'app' with that name
-
-@app.route("/")
-def home():
-    return "<h1>Welcome to the Honeypot Application!</h1>"
